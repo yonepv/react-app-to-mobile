@@ -39,6 +39,7 @@ jobs:
          
          # Step 4 - Setup Gradle to allow workflow access and execute gradlew file
          -  name: Make gradlew executable
+            working-directory: android
             run: chmod +x ./gradlew
          
          # Step 5 - Setup Gradle cache to improve the speed of the workflow
